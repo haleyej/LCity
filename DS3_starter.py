@@ -45,7 +45,11 @@ class Dice:
     # it will count how many times the passed number has been rolled and print 
     # number was rolled x times - where number is the number and x is the count
     def print_count_for_num(self, n):
-        pass
+        total = 0
+        for num in self.roll_list:
+            if num == n:
+                total += 1
+        print("{} was rolled {} times".format(n, tot))
 
 
 # main function
